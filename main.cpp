@@ -125,6 +125,7 @@ AST* parse_term() {
         next_token();
         return new AST(AST_ID, 0, n);
     }
+    next_token();
     return new AST(AST_NUM, 0);
 }
 
